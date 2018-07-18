@@ -193,7 +193,8 @@ MarkerCluster.prototype.onClusterClicked = function(cluster) {
   }
   this.map.animateCamera({
     target: cluster.getBounds(),
-    duration: 500
+    duration: 500,
+    padding: 50
   }, function() {
     if (self.boundsDraw) {
       setTimeout(function() {
